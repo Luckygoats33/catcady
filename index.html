@@ -1,484 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Cat Caddy&trade; &mdash; Luxury Multi-Carrier Cat Stroller</title>
-<meta name="description" content="First-class travel for your cats. The Cat Caddy is a luxury foldable stroller that carries 2-3 cat carriers with suspension wheels, hand brake, and premium chrome finish. Join the waitlist.">
-<meta property="og:title" content="The Cat Caddy&trade; &mdash; Luxury Multi-Carrier Cat Stroller">
-<meta property="og:description" content="First-class travel for your cats. Join the waitlist for the ultimate multi-carrier cat stroller.">
-<meta property="og:image" content="https://catcady.com/renders/cat-caddy-expanded-concept.jpg">
-<meta property="og:url" content="https://catcady.com">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cat Cady | First Class, for Your Cats</title>
+<meta name="description" content="A coachbuilt two-tier cat stroller. Strap in any carrier, push upright at standing height, and design yours in purple and gold, down to the hubcaps.">
+<link rel="canonical" href="https://catcady.com/">
+<meta property="og:title" content="Cat Cady | First Class, for Your Cats">
+<meta property="og:description" content="A coachbuilt two-tier cat stroller. Strap in any carrier, push upright at standing height, and design yours in purple and gold, down to the hubcaps.">
+<meta property="og:image" content="https://catcaddy.higgsfield.app/img/hero-cats.webp">
+<meta property="og:url" content="https://catcady.com/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="https://catcaddy.higgsfield.app/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="https://catcaddy.higgsfield.app/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --purple-deep:#1a0e2e;
-  --purple-mid:#2d1b4e;
-  --purple-light:#4a2d7a;
-  --chrome:#c0c0c0;
-  --chrome-light:#e8e8e8;
-  --gold:#d4af37;
-  --white:#ffffff;
-  --off-white:#f5f3f7;
-  --text-muted:rgba(255,255,255,0.65);
-}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Inter',system-ui,-apple-system,sans-serif;
-  background:var(--purple-deep);
-  color:var(--white);
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.2}
-
-/* NAV */
-.nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:1rem 2rem;
-  background:rgba(26,14,46,0.92);
-  backdrop-filter:blur(12px);
-  display:flex;align-items:center;justify-content:space-between;
-  border-bottom:1px solid rgba(192,192,192,0.1);
-}
-.nav-logo{
-  font-family:'Playfair Display',serif;
-  font-size:1.25rem;letter-spacing:0.05em;color:var(--chrome-light);
-}
-.nav-logo span{color:var(--gold)}
-.nav-cta{
-  padding:0.5rem 1.5rem;
-  background:transparent;border:1px solid var(--chrome);
-  color:var(--chrome-light);font-size:0.85rem;font-weight:500;
-  letter-spacing:0.08em;text-transform:uppercase;
-  text-decoration:none;transition:all 0.3s;
-}
-.nav-cta:hover{background:var(--chrome);color:var(--purple-deep)}
-
-/* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;align-items:center;justify-content:center;
-  padding:6rem 2rem 4rem;
-  background:linear-gradient(170deg,var(--purple-deep) 0%,#1f1338 40%,var(--purple-mid) 100%);
-  position:relative;overflow:hidden;
-}
-.hero::before{
-  content:'';position:absolute;top:-50%;right:-30%;
-  width:80vw;height:80vw;
-  background:radial-gradient(circle,rgba(74,45,122,0.3) 0%,transparent 70%);
-  pointer-events:none;
-}
-.hero-inner{
-  max-width:1200px;width:100%;
-  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
-  position:relative;z-index:1;
-}
-.hero-text{max-width:540px}
-.hero-badge{
-  display:inline-block;
-  padding:0.35rem 1rem;margin-bottom:1.5rem;
-  border:1px solid var(--gold);color:var(--gold);
-  font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;
-}
-.hero h1{font-size:clamp(2.5rem,5vw,4rem);margin-bottom:1rem}
-.hero h1 em{font-style:normal;color:var(--gold)}
-.hero-sub{
-  font-size:1.1rem;color:var(--text-muted);
-  margin-bottom:2.5rem;max-width:440px;font-weight:300;
-}
-.btn-primary{
-  display:inline-block;padding:1rem 2.5rem;
-  background:linear-gradient(135deg,var(--gold),#c9a030);
-  color:var(--purple-deep);font-weight:600;font-size:0.95rem;
-  letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;
-  border:none;cursor:pointer;transition:all 0.3s;
-}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,175,55,0.3)}
-.hero-image{text-align:center}
-.hero-image img{
-  max-width:100%;height:auto;
-  filter:drop-shadow(0 20px 60px rgba(0,0,0,0.5));
-}
-
-/* SECTION SHARED */
-section{padding:6rem 2rem}
-.section-inner{max-width:1100px;margin:0 auto}
-.section-label{
-  font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:0.75rem;
-}
-.section-title{font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:1rem}
-.section-subtitle{font-size:1.05rem;color:var(--text-muted);max-width:600px;font-weight:300}
-
-/* PROBLEM/SOLUTION */
-.problem{background:var(--purple-mid)}
-.problem-grid{
-  display:grid;grid-template-columns:1fr 1fr;gap:4rem;
-  margin-top:3rem;align-items:start;
-}
-.problem-card{
-  padding:2.5rem;
-  border:1px solid rgba(192,192,192,0.12);
-  background:rgba(26,14,46,0.6);
-}
-.problem-card h3{font-size:1.3rem;margin-bottom:1rem}
-.problem-card.solution{border-color:rgba(212,175,55,0.3)}
-.problem-card.solution h3{color:var(--gold)}
-.problem-list{list-style:none}
-.problem-list li{
-  padding:0.6rem 0;padding-left:1.8rem;position:relative;
-  color:var(--text-muted);font-size:0.95rem;
-}
-.problem-list li::before{
-  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
-  width:8px;height:8px;border-radius:50%;
-}
-.problem-card:not(.solution) .problem-list li::before{background:#c0392b}
-.problem-card.solution .problem-list li::before{background:var(--gold)}
-
-/* FEATURES */
-.features{background:linear-gradient(180deg,var(--purple-deep),var(--purple-mid))}
-.features-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
-  margin-top:3rem;
-}
-.feature-card{
-  padding:2rem;
-  border:1px solid rgba(192,192,192,0.08);
-  background:rgba(45,27,78,0.4);
-  transition:border-color 0.3s,transform 0.3s;
-}
-.feature-card:hover{border-color:rgba(212,175,55,0.3);transform:translateY(-4px)}
-.feature-icon{
-  font-size:1.8rem;margin-bottom:1rem;
-  width:48px;height:48px;display:flex;align-items:center;justify-content:center;
-  border:1px solid rgba(192,192,192,0.2);
-}
-.feature-card h3{font-family:'Inter',sans-serif;font-size:1rem;font-weight:600;margin-bottom:0.5rem}
-.feature-card p{font-size:0.9rem;color:var(--text-muted);font-weight:300}
-
-/* PRODUCT IMAGE BREAK */
-.product-break{
-  padding:4rem 2rem;text-align:center;
-  background:var(--purple-mid);
-}
-.product-break img{
-  max-width:700px;width:100%;height:auto;
-  filter:drop-shadow(0 20px 60px rgba(0,0,0,0.5));
-}
-.product-break p{
-  margin-top:1.5rem;font-size:0.85rem;color:var(--text-muted);
-  letter-spacing:0.1em;text-transform:uppercase;
-}
-
-/* LINEUP */
-.lineup{background:var(--purple-deep)}
-.lineup-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
-  margin-top:3rem;
-}
-.lineup-card{
-  padding:2.5rem 2rem;text-align:center;
-  border:1px solid rgba(192,192,192,0.1);
-  background:rgba(45,27,78,0.25);
-  position:relative;
-}
-.lineup-card.featured{border-color:var(--gold)}
-.lineup-card.featured::before{
-  content:'LAUNCH MODEL';position:absolute;top:0;left:50%;transform:translateX(-50%) translateY(-50%);
-  background:var(--gold);color:var(--purple-deep);
-  padding:0.25rem 1rem;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;
-}
-.lineup-card h3{font-size:1.4rem;margin-bottom:0.5rem}
-.lineup-price{font-size:2rem;font-weight:300;margin:1rem 0;color:var(--chrome-light)}
-.lineup-price span{font-size:0.9rem;color:var(--text-muted)}
-.lineup-features{list-style:none;text-align:left;margin:1.5rem 0}
-.lineup-features li{
-  padding:0.4rem 0;font-size:0.88rem;color:var(--text-muted);
-  padding-left:1.5rem;position:relative;
-}
-.lineup-features li::before{
-  content:'\2713';position:absolute;left:0;color:var(--gold);font-weight:700;
-}
-
-/* WAITLIST */
-.waitlist{
-  background:linear-gradient(170deg,var(--purple-mid),var(--purple-deep));
-  text-align:center;
-}
-.waitlist .section-subtitle{margin:0 auto 2.5rem}
-.waitlist-form{
-  max-width:480px;margin:0 auto;
-  display:flex;flex-direction:column;gap:1rem;
-}
-.waitlist-form input,.waitlist-form select{
-  padding:1rem 1.25rem;
-  background:rgba(255,255,255,0.06);
-  border:1px solid rgba(192,192,192,0.2);
-  color:var(--white);font-family:'Inter',sans-serif;font-size:0.95rem;
-  outline:none;transition:border-color 0.3s;
-}
-.waitlist-form input::placeholder{color:rgba(255,255,255,0.35)}
-.waitlist-form input:focus,.waitlist-form select:focus{border-color:var(--gold)}
-.waitlist-form select{appearance:none;cursor:pointer}
-.waitlist-form select option{background:var(--purple-deep);color:var(--white)}
-.waitlist-form .btn-primary{width:100%;text-align:center;font-size:1rem;padding:1.1rem}
-.waitlist-note{font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem}
-
-/* FAQ */
-.faq{background:var(--purple-mid)}
-.faq-list{max-width:720px;margin:3rem auto 0}
-.faq-item{border-bottom:1px solid rgba(192,192,192,0.1);padding:1.5rem 0}
-.faq-item summary{
-  cursor:pointer;font-weight:500;font-size:1rem;
-  list-style:none;display:flex;justify-content:space-between;align-items:center;
-}
-.faq-item summary::-webkit-details-marker{display:none}
-.faq-item summary::after{content:'+';font-size:1.4rem;color:var(--gold);transition:transform 0.3s}
-.faq-item[open] summary::after{transform:rotate(45deg)}
-.faq-item p{margin-top:1rem;font-size:0.93rem;color:var(--text-muted);font-weight:300;line-height:1.7}
-
-/* FOOTER */
-.footer{
-  padding:3rem 2rem;text-align:center;
-  background:var(--purple-deep);
-  border-top:1px solid rgba(192,192,192,0.08);
-}
-.footer-logo{
-  font-family:'Playfair Display',serif;font-size:1.1rem;
-  color:var(--chrome);letter-spacing:0.05em;margin-bottom:0.75rem;
-}
-.footer p{font-size:0.8rem;color:var(--text-muted)}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr;text-align:center;gap:2.5rem}
-  .hero-text{margin:0 auto}
-  .hero-sub{margin:0 auto 2.5rem}
-  .problem-grid{grid-template-columns:1fr;gap:2rem}
-  .features-grid{grid-template-columns:1fr 1fr;gap:1.5rem}
-  .lineup-grid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
-}
-@media(max-width:600px){
-  section{padding:4rem 1.25rem}
-  .nav{padding:0.75rem 1.25rem}
-  .features-grid{grid-template-columns:1fr}
-  .hero{padding:5rem 1.25rem 3rem}
-}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,700&family=Yellowtail&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://catcaddy.higgsfield.app/caddy.css?v=8">
+<link rel="preload" as="image" href="https://catcaddy.higgsfield.app/img/hero-cats.webp">
+<script>window.CADY_FORMSPREE = "https://formspree.io/f/xwpkjkpb";</script>
 </head>
 <body>
+<div class="cc">
+<div class="utility"><div class="wrap"><span>Cady Concierge · real cat people, 7 days a week</span><a href="#concierge">Ask us anything</a></div></div>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Cat Cady home"><img class="crest" src="https://catcaddy.higgsfield.app/img/crest-256.webp" alt="" width="40" height="40">Cat Cady</a>
+    <nav class="links" aria-label="Sections">
+      <a href="#comfort">For your cats</a>
+      <a href="#atelier">Design yours</a>
+      <a href="#how">How it works</a>
+      <a href="#specs">Specs</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn small" href="#reserve">Reserve</a>
+  </div>
+</header>
 
-<!-- NAV -->
-<nav class="nav">
-  <div class="nav-logo">THE CAT <span>CADDY</span>&trade;</div>
-  <a href="#waitlist" class="nav-cta">Join Waitlist</a>
-</nav>
+<main id="top">
+<section class="hero-photo" aria-label="Cat Cady">
+  <img src="https://catcaddy.higgsfield.app/img/hero-cats.webp" alt="A white Persian and a ginger tabby look out of a royal purple and gold Cat Cady parked on a tree-lined boulevard at golden hour" width="1600" height="900" fetchpriority="high">
+  <div class="wrap hero-copy">
+    <span class="model">Model Year 2027 · The Classic</span>
+    <h1>First class,<br><em>for your cats.</em></h1>
+    <p class="lede">The Cat Cady is a coachbuilt two-tier cat stroller. Strap in any carrier, push upright at standing height, and give your cats the smoothest ride on the block.</p>
+    <div class="row"><a class="btn" href="#atelier">Design your Cady</a><a class="btn ghost" href="#comfort">Made for cats</a></div>
+    <span class="fine">Free to reserve · No card needed</span>
+  </div>
+</section>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <div class="hero-badge">Coming Soon</div>
-      <h1>First-class travel <em>for your cats.</em></h1>
-      <p class="hero-sub">The luxury foldable stroller that carries 2&ndash;3 cat carriers with suspension, hand brake, and chrome finish. Vet runs will never be the same.</p>
-      <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+<section class="promise" aria-label="The Cady promise">
+  <div class="wrap promise-row">
+    <div><b>Two cats, one trip</b><span>A tier for each cat, up to 20 lb apiece</span></div>
+    <div><b>No bending</b><span>Handle rises to standing height</span></div>
+    <div><b>Any carrier fits</b><span>Strap in yours or ours, up to 19 × 13 in</span></div>
+    <div><b>Concierge help</b><span>A real person answers, usually within a day</span></div>
+  </div>
+</section>
+
+<section id="comfort" class="band comfort">
+  <div class="wrap">
+    <div class="split">
+      <div class="sec-head">
+        <span class="eyebrow">Designed around cats</span>
+        <h2>A calmer ride, from the cat's point of view</h2>
+        <p class="rule"></p>
+        <p>Vet days are hard on cats. Every part of the Cady is designed to make the trip feel smaller, softer and steadier for the passengers inside.</p>
+      </div>
+      <img class="shot" src="https://catcaddy.higgsfield.app/img/cabin.webp" alt="A grey Persian cat curled up on a cream fleece pad inside a quilted carrier with mesh windows" width="1600" height="1200" loading="lazy">
     </div>
-    <div class="hero-image">
-      <img src="renders/cat-caddy-expanded-concept.jpg" alt="The Cat Caddy luxury multi-carrier cat stroller in royal purple with chrome accents" width="600" height="600" loading="eager">
+    <div class="features">
+      <div><h3>Fresh air on three sides</h3><p>Mesh windows front and sides keep air moving and let curious cats watch the street.</p></div>
+      <div><h3>A smooth, quiet ride</h3><p>Spring suspension and soft rubber tires take the jolt out of curbs and cracked sidewalks.</p></div>
+      <div><h3>A soft place to settle</h3><p>Every Cady carrier comes with a washable fleece pad that smells like home after one trip.</p></div>
+      <div><h3>A safety tether inside</h3><p>An interior clip for your cat's harness means no surprise escapes when the door opens.</p></div>
+      <div><h3>Their own tier</h3><p>One cat per tier keeps rivals apart and nervous cats from piling on each other.</p></div>
+      <div><h3>Their name on the door</h3><p>An engraved plate for each cat, in gold, chrome or satin black.</p></div>
+    </div>
+    <div class="fitrow">
+      <figure class="vet">
+        <img class="shot" src="https://catcaddy.higgsfield.app/img/vet.webp" alt="A woman stands upright outside a vet clinic, unbuckling a carrier from the top tier of her Cat Cady while her tabby watches" width="1600" height="1200" loading="lazy">
+        <figcaption>Vet day, without the juggling: unbuckle, lift, and walk in.</figcaption>
+      </figure>
+      <form class="fit" id="fit" novalidate>
+        <span class="eyebrow">Fit check</span>
+        <h3>Will my cats fit?</h3>
+        <div class="field"><label for="fit-n">How many cats?</label>
+          <select id="fit-n"><option value="1">1 cat</option><option value="2" selected>2 cats</option><option value="3">3 cats</option></select></div>
+        <div class="field" data-cat="1"><label for="fit-w1">First cat's weight</label>
+          <select id="fit-w1"><option value="8">Under 8 lb</option><option value="12" selected>8 to 12 lb</option><option value="16">12 to 16 lb</option><option value="20">16 to 20 lb</option><option value="99">Over 20 lb</option></select></div>
+        <div class="field" data-cat="2"><label for="fit-w2">Second cat's weight</label>
+          <select id="fit-w2"><option value="8">Under 8 lb</option><option value="12" selected>8 to 12 lb</option><option value="16">12 to 16 lb</option><option value="20">16 to 20 lb</option><option value="99">Over 20 lb</option></select></div>
+        <div class="field" data-cat="3" hidden><label for="fit-w3">Third cat's weight</label>
+          <select id="fit-w3"><option value="8">Under 8 lb</option><option value="12" selected>8 to 12 lb</option><option value="16">12 to 16 lb</option><option value="20">16 to 20 lb</option><option value="99">Over 20 lb</option></select></div>
+        <p class="fit-out" id="fit-out" aria-live="polite"></p>
+      </form>
     </div>
   </div>
 </section>
 
-<!-- PROBLEM / SOLUTION -->
-<section class="problem">
-  <div class="section-inner">
-    <div class="section-label">The Problem</div>
-    <h2 class="section-title">Two cats. Two carriers. Zero hands free.</h2>
-    <p class="section-subtitle">Every multi-cat household knows the drill.</p>
-    <div class="problem-grid">
-      <div class="problem-card">
-        <h3>The Vet-Day Struggle</h3>
-        <ul class="problem-list">
-          <li>Carrying 25+ lbs of cats across a parking lot</li>
-          <li>Awkward, unbalanced carriers banging your legs</li>
-          <li>Fumbling for keys, doors, and the check-in clipboard</li>
-          <li>Multiple trips back to the car</li>
-          <li>Stressed cats, stressed owner, every single time</li>
-        </ul>
+<section id="atelier" class="atelier" aria-label="Design your Cat Cady">
+  <div class="wrap">
+    <div class="sec-head light">
+      <span class="eyebrow">The Atelier</span>
+      <h2>Design your Cady</h2>
+      <p class="rule"></p>
+      <p>Choose the paint, the brightwork, the wheels and the cabins, then put your cats' names on the doors. Every photo changes with you.</p>
+    </div>
+    <div class="builder" id="build">
+      <div class="panel-wrap">
+        <div class="steps-nav" role="tablist" aria-label="Design steps">
+          <button type="button" role="tab" data-step="1" aria-selected="true"><i>I</i>Frame</button>
+          <button type="button" role="tab" data-step="2" aria-selected="false"><i>II</i>Wheels</button>
+          <button type="button" role="tab" data-step="3" aria-selected="false"><i>III</i>Cabins</button>
+          <button type="button" role="tab" data-step="4" aria-selected="false"><i>IV</i>Handle</button>
+          <button type="button" role="tab" data-step="5" aria-selected="false"><i>V</i>Personal</button>
+        </div>
+        <div class="panel" id="panel">
+          <div class="step" data-step="1">
+            <fieldset class="group"><legend>Paint <span class="sel" id="sel-paint"></span></legend><div class="swatches" id="o-paint"></div></fieldset>
+            <fieldset class="group"><legend>Brightwork <span class="sel" id="sel-trim"></span></legend><div class="chips" id="o-trim"></div></fieldset>
+          </div>
+          <div class="step" data-step="2" hidden>
+            <fieldset class="group"><legend>Wheels <span class="sel" id="sel-wheel"></span></legend><div class="chips" id="o-wheel"></div></fieldset>
+            <fieldset class="group"><legend>Hubcaps</legend>
+              <div class="chips" id="o-hub"></div>
+              <div class="field" id="mono-wrap" hidden><label for="mono">Monogram letter</label><input type="text" id="mono" maxlength="1" value="C" style="width:72px;text-align:center;text-transform:uppercase"></div>
+            </fieldset>
+          </div>
+          <div class="step" data-step="3" hidden>
+            <fieldset class="group"><legend>Cabin fabric <span class="sel" id="sel-fabric"></span></legend>
+              <div class="chips" id="o-pattern"></div>
+              <div class="swatches" id="o-fabric"></div>
+              <p class="note" id="sig-note" hidden>Signature patterns come in one house colorway.</p>
+              <p class="note">Cady carriers are optional. The tiers fit the carrier you already own.</p>
+            </fieldset>
+          </div>
+          <div class="step" data-step="4" hidden>
+            <fieldset class="group"><legend>Handle leather <span class="sel" id="sel-wrap"></span></legend><div class="swatches" id="o-wrap"></div></fieldset>
+            <label class="toggle"><input type="checkbox" id="console" checked><span><b>Handle console <span class="note">included</span></b><small>Phone shelf and cup holder at the grip.</small></span></label>
+          </div>
+          <div class="step" data-step="5" hidden>
+            <fieldset class="group"><legend>Name plates</legend>
+              <p class="note">Your cats' names, engraved on each carrier door (+$25 for the pair).</p>
+              <div class="two">
+                <div class="field"><label for="name1">Top tier</label><input type="text" id="name1" maxlength="12" placeholder="e.g. Biscuit"></div>
+                <div class="field"><label for="name2">Bottom tier</label><input type="text" id="name2" maxlength="12" placeholder="e.g. Mochi"></div>
+              </div>
+            </fieldset>
+            <label class="toggle"><input type="checkbox" id="canopy"><span><b>Weather canopy <span class="note">+$35</span></b><small>A convertible-style hood over the top tier for sun and drizzle.</small></span></label>
+          </div>
+          <div class="stepfoot"><button type="button" class="btn ghost small" id="step-prev">Back</button><button type="button" class="btn small" id="step-next">Next: Wheels</button></div>
+        </div>
       </div>
-      <div class="problem-card solution">
-        <h3>The Cat Caddy Way</h3>
-        <ul class="problem-list">
-          <li>Both carriers secured on a rolling platform</li>
-          <li>Suspension wheels glide over cracks and curbs</li>
-          <li>One hand steers, one hand is free</li>
-          <li>Hand brake holds steady while you check in</li>
-          <li>Calm arrival &mdash; for everyone</li>
-        </ul>
+
+      <div class="stage-col">
+        <div class="stage" id="stage">
+          <span class="tag">Your Cady</span>
+          <div class="tools">
+            <button class="icon-btn" type="button" id="surprise">Surprise me</button>
+            <button class="icon-btn" type="button" id="reset">Reset</button>
+          </div>
+          <div class="frame" id="frame"><img class="ph on" alt="" src="https://catcaddy.higgsfield.app/img/royal-gold.webp" width="1600" height="1200"><img class="ph" alt=""><span class="engrave" hidden></span></div>
+          <div class="stagebar"><span class="stage-label" id="stage-label">Royal Purple with gold trim</span><button type="button" class="icon-btn" id="t-full" hidden>Full view</button></div>
+        </div>
+        <div class="details" id="details" aria-label="Detail photos of your build"></div>
+        <div class="ticket">
+          <div class="line" id="summary-line"></div>
+          <div class="price" id="price">$319</div>
+          <small>Estimated price while we finish manufacturing. Reserving is free.</small>
+          <a class="btn" href="#reserve" style="grid-column:1/-1">Reserve this build</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
-  <div class="section-inner">
-    <div class="section-label">Engineered Details</div>
-    <h2 class="section-title">Built for real cat parents.</h2>
-    <p class="section-subtitle">Every detail designed around the moments that matter most.</p>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon">&#9783;</div>
-        <h3>Two-Tier Platform</h3>
-        <p>Carries 2&ndash;3 standard hard-shell carriers, securely strapped with padded anti-slip surfaces and raised-lip edges.</p>
+<section id="how" class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="sec-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Bring any carrier. Strap it in. Go.</h2>
+        <p class="rule"></p>
+        <p>Each tier is a padded, non-slip tray with a low lip that keeps a carrier centered. Set down any carrier up to 19 by 13 inches, pull two leather straps over the top and click the buckles. Ours fit perfectly, and so does the one already in your closet.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">&#9881;</div>
-        <h3>Suspension Wheels</h3>
-        <p>10-inch white-wall wheels with coil-spring suspension. Smooth ride over sidewalk cracks, curbs, and parking lots.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">&#9951;</div>
-        <h3>Hand Brake</h3>
-        <p>One-touch lever on the handlebar locks the rear wheels. Red/green indicator shows brake status at a glance.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">&#9733;</div>
-        <h3>Integrated Console</h3>
-        <p>Dual recessed cup holders plus a lidded storage compartment &mdash; molded seamlessly into the frame, not bolted on.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">&#8635;</div>
-        <h3>One-Hand Fold</h3>
-        <p>X-frame collapses flat and stands upright on its own. Fits in an SUV trunk, closet, or behind a door.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">&#10022;</div>
-        <h3>Premium Finish</h3>
-        <p>Royal purple metallic powder coat with Cadillac-inspired chrome accents. This is not a shopping cart.</p>
-      </div>
+      <img class="shot" src="https://catcaddy.higgsfield.app/img/strap.webp" alt="A hand pulls a cream leather strap with a gold buckle tight over a cat carrier on a padded purple tier" width="1600" height="1200" loading="lazy">
+    </div>
+    <ol class="numbered">
+      <li><span>I</span><div><h3>Set it down</h3><p>Place the carrier on the padded tray. The raised lip and non-slip surface keep it from sliding.</p></div></li>
+      <li><span>II</span><div><h3>Strap and click</h3><p>Pull both straps over the top and click each buckle. One pull cinches it snug.</p></div></li>
+      <li><span>III</span><div><h3>Release and lift</h3><p>Flip the buckles open and lift. Your cat goes straight into the vet's office in their own carrier.</p></div></li>
+    </ol>
+    <figure class="wide">
+      <img class="shot" src="https://catcaddy.higgsfield.app/img/anycarrier.webp" alt="The Cat Cady with an ordinary plastic carrier strapped on the top tier and a soft carrier on the bottom tier" width="1600" height="1200" loading="lazy">
+      <figcaption>Hard-shell, soft-sided, or ours: if it's up to 19 by 13 inches, it rides.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="band coach" aria-label="Coachbuilt details">
+  <div class="wrap">
+    <div class="sec-head light">
+      <span class="eyebrow">Coachbuilt details</span>
+      <h2>The details you'll notice every walk</h2>
+      <p class="rule"></p>
+      <p>Diamond-quilted leather, real brightwork, whitewall wheels and snap-in hubcaps you can change any time. Built to the order you design.</p>
+    </div>
+    <div class="coach-grid">
+      <figure class="tall"><img class="shot" src="https://catcaddy.higgsfield.app/img/wheels.webp" alt="Four wheel styles: whitewall with paw hubcap, chrome spoke, blackout, two-tone with star hubcap" loading="lazy"><figcaption>Four wheel styles, three finishes, four hubcaps.</figcaption></figure>
+      <figure><img class="shot" src="https://catcaddy.higgsfield.app/img/plate.webp" alt="A gold name plate engraved Biscuit on an aubergine quilted carrier" loading="lazy"><figcaption>Engraved plates, one for each cat.</figcaption></figure>
+      <figure><img class="shot" src="https://catcaddy.higgsfield.app/img/materials.webp" alt="Quilted fabric swatches, cream leather, a gold paw hubcap and paint chips" loading="lazy"><figcaption>Fabrics, leathers, paint and hardware.</figcaption></figure>
     </div>
   </div>
 </section>
 
-<!-- PRODUCT BREAK (FOLDED VIEW) -->
-<section class="product-break">
-  <img src="renders/cat-caddy-folded-concept.jpg" alt="The Cat Caddy folded for compact storage, showing one-hand fold mechanism" width="700" height="700" loading="lazy">
-  <p>Folds flat. Stands upright. Fits anywhere.</p>
-</section>
-
-<!-- LINEUP -->
-<section class="lineup">
-  <div class="section-inner">
-    <div class="section-label">The Lineup</div>
-    <h2 class="section-title">Choose your ride.</h2>
-    <p class="section-subtitle">Starting with Classic at launch. More to come.</p>
-    <div class="lineup-grid">
-      <div class="lineup-card featured">
-        <h3>Classic</h3>
-        <div class="lineup-price">$249 <span>estimated retail</span></div>
-        <ul class="lineup-features">
-          <li>2&ndash;3 carrier capacity</li>
-          <li>10" suspension wheels</li>
-          <li>Hand brake</li>
-          <li>Dual cup holders + storage</li>
-          <li>One-hand fold</li>
-          <li>Chrome accent package</li>
-        </ul>
+<section id="specs" class="band">
+  <div class="wrap brochure">
+    <figure class="fold"><img class="shot" src="https://catcaddy.higgsfield.app/img/fold.webp" alt="The Cat Cady frame folded flat in an entryway, carriers beside it and a tabby sitting nearby" loading="lazy"><figcaption>Carriers off, the frame folds flat to stand in a hallway or slide into a trunk.</figcaption></figure>
+    <div>
+      <div class="sec-head">
+        <span class="eyebrow">Specifications</span>
+        <h2>The Classic</h2>
+        <p class="rule"></p>
+        <p>Design targets. Final figures follow prototype testing.</p>
       </div>
-      <div class="lineup-card">
-        <h3>Luxe</h3>
-        <div class="lineup-price">$299&ndash;349 <span>estimated retail</span></div>
-        <ul class="lineup-features">
-          <li>Everything in Classic</li>
-          <li>Magnetic carrier straps</li>
-          <li>Vegan leather handle grip</li>
-          <li>Full chrome package</li>
-          <li>Color options available</li>
-        </ul>
-      </div>
-      <div class="lineup-card">
-        <h3>Qi Charger Add-On</h3>
-        <div class="lineup-price">$39&ndash;49 <span>estimated retail</span></div>
-        <ul class="lineup-features">
-          <li>Face-down wireless charging pad</li>
-          <li>Snap-in console mount</li>
-          <li>USB-C powered</li>
-          <li>10&ndash;15W fast charge</li>
-        </ul>
-      </div>
+      <dl class="spec">
+        <div><dt>Tiers</dt><dd>2 padded strap-in trays</dd></div>
+        <div><dt>Carrier size</dt><dd>Up to 19 × 13 in</dd></div>
+        <div><dt>Load per tier</dt><dd>20 lb (9 kg) target</dd></div>
+        <div><dt>Handle</dt><dd>Telescoping, 36–46 in</dd></div>
+        <div><dt>Frame</dt><dd>Powder-coated aluminum</dd></div>
+        <div><dt>Ride</dt><dd>4-wheel spring suspension</dd></div>
+        <div><dt>Brake</dt><dd>Rear foot brake</dd></div>
+        <div><dt>Fold</dt><dd>Flat, stands on its own</dd></div>
+        <div><dt>Estimated price</dt><dd>From $279</dd></div>
+      </dl>
     </div>
   </div>
 </section>
 
-<!-- WAITLIST -->
-<section class="waitlist" id="waitlist">
-  <div class="section-inner">
-    <div class="section-label">Be First</div>
-    <h2 class="section-title">Get exclusive launch pricing.</h2>
-    <p class="section-subtitle">Waitlist members will be the first to know when The Cat Caddy is available &mdash; and the only ones who get founder pricing.</p>
-    <form class="waitlist-form" action="https://formspree.io/f/xwpkjkpb" method="POST">
-      <input type="hidden" name="_subject" value="New Cat Caddy Waitlist Signup">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Email address" required>
-      <select name="model" required>
-        <option value="" disabled selected>Which model interests you?</option>
-        <option value="Classic">Classic ($249)</option>
-        <option value="Luxe">Luxe ($299&ndash;349)</option>
-        <option value="Both">Both &mdash; I want options</option>
-      </select>
-      <button type="submit" class="btn-primary">Join the Waitlist</button>
-      <p class="waitlist-note">No payment required. We&rsquo;ll only email you about The Cat Caddy.</p>
+<section id="reserve" class="band reserve-band">
+  <div class="wrap reserve">
+    <div class="sec-head" style="margin:0">
+      <span class="eyebrow">First production run</span>
+      <h2>Reserve your Cady</h2>
+      <p class="rule"></p>
+      <p>Reserving is free. We save the build you designed, keep you posted as the prototype comes together, and give reservation holders first access when orders open.</p>
+      <p>Tell us what you'd expect to pay. It helps us decide what goes into the final version.</p>
+    </div>
+    <form class="res" id="res-form" novalidate>
+      <div class="yourbuild" id="yourbuild"></div>
+      <div class="two">
+        <div class="field"><label for="r-name">First name</label><input type="text" id="r-name" autocomplete="given-name"></div>
+        <div class="field"><label for="r-email">Email</label><input type="email" id="r-email" autocomplete="email" required></div>
+      </div>
+      <div class="two">
+        <div class="field"><label for="r-cats">How many cats?</label>
+          <select id="r-cats"><option>1</option><option selected>2</option><option>3</option><option>4 or more</option></select></div>
+        <div class="field"><label for="r-pay">What would you expect to pay?</label>
+          <select id="r-pay"><option>Under $250</option><option>$250 to $299</option><option selected>$300 to $349</option><option>$350 to $399</option><option>$400 or more</option></select></div>
+      </div>
+      <p class="note" id="r-error" hidden></p>
+      <button class="btn" type="submit">Reserve my build</button>
+      <p class="note">We only use your email for Cat Cady updates. <a href="/privacy/">Privacy policy</a></p>
+      <div class="done" id="r-done" hidden></div>
     </form>
   </div>
 </section>
 
-<!-- FAQ -->
-<section class="faq">
-  <div class="section-inner">
-    <div class="section-label">FAQ</div>
-    <h2 class="section-title">Questions? We&rsquo;ve got answers.</h2>
-    <div class="faq-list">
-      <details class="faq-item">
-        <summary>When will The Cat Caddy be available?</summary>
-        <p>We&rsquo;re currently in the design and prototyping phase. Waitlist members will be the first to know when pre-orders open. Sign up above to stay in the loop.</p>
-      </details>
-      <details class="faq-item">
-        <summary>What size carriers does it fit?</summary>
-        <p>The Cat Caddy is designed for standard hard-shell carriers (the kind most people already own for vet visits). The platform accommodates 2&ndash;3 carriers on two tiers with adjustable straps.</p>
-      </details>
-      <details class="faq-item">
-        <summary>How much weight can it hold?</summary>
-        <p>The target weight capacity is generous enough for multiple cats plus carriers. Final specs will be confirmed after prototype testing and published before pre-orders open.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Does it fold for storage?</summary>
-        <p>Yes. The X-frame design collapses with one hand and stands upright on its own when folded. It fits in an SUV trunk, a closet, or behind a door.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Is this just a fancy shopping cart?</summary>
-        <p>Not even close. The Cat Caddy is purpose-built for cat carriers &mdash; with suspension wheels for smooth rolling, padded anti-slip platforms, carrier straps, an ergonomic 5-foot handle, a hand brake, and an integrated console. It&rsquo;s a mobility solution, not a utility cart.</p>
-      </details>
-      <details class="faq-item">
-        <summary>Will there be color options?</summary>
-        <p>The launch model features our signature royal purple with chrome accents. Additional colorways (Jet Black, Coastal Cream, Forest Green, Blush Sand) are planned for the Luxe model.</p>
-      </details>
+<section id="concierge" class="band concierge">
+  <div class="wrap reserve">
+    <div class="sec-head" style="margin:0">
+      <span class="eyebrow">Cady Concierge</span>
+      <h2>Questions? A real cat person will answer.</h2>
+      <p class="rule"></p>
+      <p>Not sure which wheels suit your sidewalks, whether your Maine Coon will fit, or which carriers fit the tiers? Ask us. A member of the Cat Cady team reads every message and writes back personally.</p>
+      <ul class="perks">
+        <li><b>Help choosing your build</b> colors, wheels, carrier size for your cats</li>
+        <li><b>Fit and comfort advice</b> tell us about your cats and your trips</li>
+        <li><b>Updates on the Classic</b> prototype photos and launch timing</li>
+      </ul>
+      <img class="shot concierge-photo" src="https://catcaddy.higgsfield.app/img/concierge.webp" alt="A smiling Cat Cady concierge on a headset at a desk, a grey tabby curled up beside the laptop" loading="lazy">
     </div>
+    <form class="res" id="c-form" novalidate>
+      <div class="two">
+        <div class="field"><label for="c-name">Your name</label><input type="text" id="c-name" autocomplete="name"></div>
+        <div class="field"><label for="c-email">Email</label><input type="email" id="c-email" autocomplete="email" required></div>
+      </div>
+      <div class="field"><label for="c-topic">What can we help with?</label>
+        <select id="c-topic"><option>Choosing my build</option><option>Will my cats fit?</option><option>Reservations</option><option>Something else</option></select></div>
+      <div class="field"><label for="c-msg">Message</label><textarea id="c-msg" rows="5" placeholder="Tell us about your cats and what you have in mind."></textarea></div>
+      <p class="note" id="c-error" hidden></p>
+      <button class="btn" type="submit">Send to the Concierge</button>
+      <div class="done" id="c-done" hidden></div>
+    </form>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-logo">THE CAT CADDY&trade;</div>
-  <p>&copy; 2026 The Cat Caddy. All rights reserved. The Cat Caddy&trade; is a trademark. Patent pending.</p>
-</footer>
+<section id="faq" class="band">
+  <div class="wrap">
+    <div class="sec-head"><span class="eyebrow">Questions</span><h2>FAQ</h2><p class="rule"></p></div>
+    <div class="faq">
+      <details><summary>Is it safe for nervous cats?</summary><p>The ride is cushioned by spring suspension, each cat has its own tier, and Cady carriers include an interior harness tether. If your cat is very anxious, ask the Concierge and we will share what helps.</p></details>
+      <details><summary>When does it ship?</summary><p>We're finishing the design now, then building and testing prototypes. Reservation holders hear about each milestone first and get first access to the first production run.</p></details>
+      <details><summary>Do I pay anything to reserve?</summary><p>No. A reservation saves your design and your place in line. You decide whether to order when orders open.</p></details>
+      <details><summary>Will my current cat carrier fit?</summary><p>Yes. Each tier takes any carrier or crate up to 19 by 13 inches, hard-shell or soft-sided, held by two cross straps with buckles. Cat Cady carriers are designed to match the frame, but you don't need them.</p></details>
+      <details><summary>How big can my cats be?</summary><p>We're designing each carrier for cats up to about 20 lb. We'll confirm the final rating after testing.</p></details>
+      <details><summary>Can I get three tiers?</summary><p>We're launching with two. If you'd want a third, mention it when you reserve. Enough requests and we'll build it.</p></details>
+      <details><summary>Can I change my design later?</summary><p>Yes. Your reservation is a starting point, and you can change any option before you order.</p></details>
+    </div>
+  </div>
+</section>
+</main>
 
+<footer>
+  <div class="wrap foot">
+    <img class="foot-crest" src="https://catcaddy.higgsfield.app/img/crest-256.webp" alt="Cat Cady crest" width="96" height="96" loading="lazy">
+    <span class="mark">Cat Cady</span>
+    <p class="tagline">Coachbuilt for cats.</p>
+    <nav class="foot-links" aria-label="Footer"><a href="#atelier">Design yours</a><a href="#concierge">Concierge</a><a href="#reserve">Reserve</a><a href="/privacy/">Privacy</a></nav>
+    <p class="fine">© 2026 Cat Cady · catcady.com · The Classic is in development. Images are renders of the design.</p>
+  </div>
+</footer>
+<a class="help-fab" href="#concierge" aria-label="Ask the Concierge"><span>Ask the Concierge</span></a>
+</div>
+<script src="https://catcaddy.higgsfield.app/caddy.js?v=10" defer></script>
 </body>
 </html>
