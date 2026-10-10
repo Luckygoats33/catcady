@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cat Caddy&trade; &mdash; Luxury Multi-Carrier Cat Stroller</title>
+<meta name="description" content="First-class travel for your cats. The Cat Caddy is a luxury foldable stroller that carries 2-3 cat carriers with suspension wheels, hand brake, and premium chrome finish. Join the waitlist.">
+<meta property="og:title" content="The Cat Caddy&trade; &mdash; Luxury Multi-Carrier Cat Stroller">
+<meta property="og:description" content="First-class travel for your cats. Join the waitlist for the ultimate multi-carrier cat stroller.">
+<meta property="og:image" content="https://catcady.com/renders/cat-caddy-expanded-concept.jpg">
+<meta property="og:url" content="https://catcady.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --purple-deep:#1a0e2e;
+  --purple-mid:#2d1b4e;
+  --purple-light:#4a2d7a;
+  --chrome:#c0c0c0;
+  --chrome-light:#e8e8e8;
+  --gold:#d4af37;
+  --white:#ffffff;
+  --off-white:#f5f3f7;
+  --text-muted:rgba(255,255,255,0.65);
+}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,-apple-system,sans-serif;
+  background:var(--purple-deep);
+  color:var(--white);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:700;line-height:1.2}
+
+/* NAV */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:1rem 2rem;
+  background:rgba(26,14,46,0.92);
+  backdrop-filter:blur(12px);
+  display:flex;align-items:center;justify-content:space-between;
+  border-bottom:1px solid rgba(192,192,192,0.1);
+}
+.nav-logo{
+  font-family:'Playfair Display',serif;
+  font-size:1.25rem;letter-spacing:0.05em;color:var(--chrome-light);
+}
+.nav-logo span{color:var(--gold)}
+.nav-cta{
+  padding:0.5rem 1.5rem;
+  background:transparent;border:1px solid var(--chrome);
+  color:var(--chrome-light);font-size:0.85rem;font-weight:500;
+  letter-spacing:0.08em;text-transform:uppercase;
+  text-decoration:none;transition:all 0.3s;
+}
+.nav-cta:hover{background:var(--chrome);color:var(--purple-deep)}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;align-items:center;justify-content:center;
+  padding:6rem 2rem 4rem;
+  background:linear-gradient(170deg,var(--purple-deep) 0%,#1f1338 40%,var(--purple-mid) 100%);
+  position:relative;overflow:hidden;
+}
+.hero::before{
+  content:'';position:absolute;top:-50%;right:-30%;
+  width:80vw;height:80vw;
+  background:radial-gradient(circle,rgba(74,45,122,0.3) 0%,transparent 70%);
+  pointer-events:none;
+}
+.hero-inner{
+  max-width:1200px;width:100%;
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;
+  position:relative;z-index:1;
+}
+.hero-text{max-width:540px}
+.hero-badge{
+  display:inline-block;
+  padding:0.35rem 1rem;margin-bottom:1.5rem;
+  border:1px solid var(--gold);color:var(--gold);
+  font-size:0.75rem;font-weight:600;letter-spacing:0.15em;text-transform:uppercase;
+}
+.hero h1{font-size:clamp(2.5rem,5vw,4rem);margin-bottom:1rem}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero-sub{
+  font-size:1.1rem;color:var(--text-muted);
+  margin-bottom:2.5rem;max-width:440px;font-weight:300;
+}
+.btn-primary{
+  display:inline-block;padding:1rem 2.5rem;
+  background:linear-gradient(135deg,var(--gold),#c9a030);
+  color:var(--purple-deep);font-weight:600;font-size:0.95rem;
+  letter-spacing:0.06em;text-transform:uppercase;text-decoration:none;
+  border:none;cursor:pointer;transition:all 0.3s;
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(212,175,55,0.3)}
+.hero-image{text-align:center}
+.hero-image img{
+  max-width:100%;height:auto;
+  filter:drop-shadow(0 20px 60px rgba(0,0,0,0.5));
+}
+
+/* SECTION SHARED */
+section{padding:6rem 2rem}
+.section-inner{max-width:1100px;margin:0 auto}
+.section-label{
+  font-size:0.75rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:0.75rem;
+}
+.section-title{font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:1rem}
+.section-subtitle{font-size:1.05rem;color:var(--text-muted);max-width:600px;font-weight:300}
+
+/* PROBLEM/SOLUTION */
+.problem{background:var(--purple-mid)}
+.problem-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:4rem;
+  margin-top:3rem;align-items:start;
+}
+.problem-card{
+  padding:2.5rem;
+  border:1px solid rgba(192,192,192,0.12);
+  background:rgba(26,14,46,0.6);
+}
+.problem-card h3{font-size:1.3rem;margin-bottom:1rem}
+.problem-card.solution{border-color:rgba(212,175,55,0.3)}
+.problem-card.solution h3{color:var(--gold)}
+.problem-list{list-style:none}
+.problem-list li{
+  padding:0.6rem 0;padding-left:1.8rem;position:relative;
+  color:var(--text-muted);font-size:0.95rem;
+}
+.problem-list li::before{
+  content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);
+  width:8px;height:8px;border-radius:50%;
+}
+.problem-card:not(.solution) .problem-list li::before{background:#c0392b}
+.problem-card.solution .problem-list li::before{background:var(--gold)}
+
+/* FEATURES */
+.features{background:linear-gradient(180deg,var(--purple-deep),var(--purple-mid))}
+.features-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
+  margin-top:3rem;
+}
+.feature-card{
+  padding:2rem;
+  border:1px solid rgba(192,192,192,0.08);
+  background:rgba(45,27,78,0.4);
+  transition:border-color 0.3s,transform 0.3s;
+}
+.feature-card:hover{border-color:rgba(212,175,55,0.3);transform:translateY(-4px)}
+.feature-icon{
+  font-size:1.8rem;margin-bottom:1rem;
+  width:48px;height:48px;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(192,192,192,0.2);
+}
+.feature-card h3{font-family:'Inter',sans-serif;font-size:1rem;font-weight:600;margin-bottom:0.5rem}
+.feature-card p{font-size:0.9rem;color:var(--text-muted);font-weight:300}
+
+/* PRODUCT IMAGE BREAK */
+.product-break{
+  padding:4rem 2rem;text-align:center;
+  background:var(--purple-mid);
+}
+.product-break img{
+  max-width:700px;width:100%;height:auto;
+  filter:drop-shadow(0 20px 60px rgba(0,0,0,0.5));
+}
+.product-break p{
+  margin-top:1.5rem;font-size:0.85rem;color:var(--text-muted);
+  letter-spacing:0.1em;text-transform:uppercase;
+}
+
+/* LINEUP */
+.lineup{background:var(--purple-deep)}
+.lineup-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;
+  margin-top:3rem;
+}
+.lineup-card{
+  padding:2.5rem 2rem;text-align:center;
+  border:1px solid rgba(192,192,192,0.1);
+  background:rgba(45,27,78,0.25);
+  position:relative;
+}
+.lineup-card.featured{border-color:var(--gold)}
+.lineup-card.featured::before{
+  content:'LAUNCH MODEL';position:absolute;top:0;left:50%;transform:translateX(-50%) translateY(-50%);
+  background:var(--gold);color:var(--purple-deep);
+  padding:0.25rem 1rem;font-size:0.65rem;font-weight:700;letter-spacing:0.15em;
+}
+.lineup-card h3{font-size:1.4rem;margin-bottom:0.5rem}
+.lineup-price{font-size:2rem;font-weight:300;margin:1rem 0;color:var(--chrome-light)}
+.lineup-price span{font-size:0.9rem;color:var(--text-muted)}
+.lineup-features{list-style:none;text-align:left;margin:1.5rem 0}
+.lineup-features li{
+  padding:0.4rem 0;font-size:0.88rem;color:var(--text-muted);
+  padding-left:1.5rem;position:relative;
+}
+.lineup-features li::before{
+  content:'\2713';position:absolute;left:0;color:var(--gold);font-weight:700;
+}
+
+/* WAITLIST */
+.waitlist{
+  background:linear-gradient(170deg,var(--purple-mid),var(--purple-deep));
+  text-align:center;
+}
+.waitlist .section-subtitle{margin:0 auto 2.5rem}
+.waitlist-form{
+  max-width:480px;margin:0 auto;
+  display:flex;flex-direction:column;gap:1rem;
+}
+.waitlist-form input,.waitlist-form select{
+  padding:1rem 1.25rem;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(192,192,192,0.2);
+  color:var(--white);font-family:'Inter',sans-serif;font-size:0.95rem;
+  outline:none;transition:border-color 0.3s;
+}
+.waitlist-form input::placeholder{color:rgba(255,255,255,0.35)}
+.waitlist-form input:focus,.waitlist-form select:focus{border-color:var(--gold)}
+.waitlist-form select{appearance:none;cursor:pointer}
+.waitlist-form select option{background:var(--purple-deep);color:var(--white)}
+.waitlist-form .btn-primary{width:100%;text-align:center;font-size:1rem;padding:1.1rem}
+.waitlist-note{font-size:0.8rem;color:var(--text-muted);margin-top:0.5rem}
+
+/* FAQ */
+.faq{background:var(--purple-mid)}
+.faq-list{max-width:720px;margin:3rem auto 0}
+.faq-item{border-bottom:1px solid rgba(192,192,192,0.1);padding:1.5rem 0}
+.faq-item summary{
+  cursor:pointer;font-weight:500;font-size:1rem;
+  list-style:none;display:flex;justify-content:space-between;align-items:center;
+}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:'+';font-size:1.4rem;color:var(--gold);transition:transform 0.3s}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item p{margin-top:1rem;font-size:0.93rem;color:var(--text-muted);font-weight:300;line-height:1.7}
+
+/* FOOTER */
+.footer{
+  padding:3rem 2rem;text-align:center;
+  background:var(--purple-deep);
+  border-top:1px solid rgba(192,192,192,0.08);
+}
+.footer-logo{
+  font-family:'Playfair Display',serif;font-size:1.1rem;
+  color:var(--chrome);letter-spacing:0.05em;margin-bottom:0.75rem;
+}
+.footer p{font-size:0.8rem;color:var(--text-muted)}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;text-align:center;gap:2.5rem}
+  .hero-text{margin:0 auto}
+  .hero-sub{margin:0 auto 2.5rem}
+  .problem-grid{grid-template-columns:1fr;gap:2rem}
+  .features-grid{grid-template-columns:1fr 1fr;gap:1.5rem}
+  .lineup-grid{grid-template-columns:1fr;max-width:400px;margin-left:auto;margin-right:auto}
+}
+@media(max-width:600px){
+  section{padding:4rem 1.25rem}
+  .nav{padding:0.75rem 1.25rem}
+  .features-grid{grid-template-columns:1fr}
+  .hero{padding:5rem 1.25rem 3rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-logo">THE CAT <span>CADDY</span>&trade;</div>
+  <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">Coming Soon</div>
+      <h1>First-class travel <em>for your cats.</em></h1>
+      <p class="hero-sub">The luxury foldable stroller that carries 2&ndash;3 cat carriers with suspension, hand brake, and chrome finish. Vet runs will never be the same.</p>
+      <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+    </div>
+    <div class="hero-image">
+      <img src="renders/cat-caddy-expanded-concept.jpg" alt="The Cat Caddy luxury multi-carrier cat stroller in royal purple with chrome accents" width="600" height="600" loading="eager">
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEM / SOLUTION -->
+<section class="problem">
+  <div class="section-inner">
+    <div class="section-label">The Problem</div>
+    <h2 class="section-title">Two cats. Two carriers. Zero hands free.</h2>
+    <p class="section-subtitle">Every multi-cat household knows the drill.</p>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <h3>The Vet-Day Struggle</h3>
+        <ul class="problem-list">
+          <li>Carrying 25+ lbs of cats across a parking lot</li>
+          <li>Awkward, unbalanced carriers banging your legs</li>
+          <li>Fumbling for keys, doors, and the check-in clipboard</li>
+          <li>Multiple trips back to the car</li>
+          <li>Stressed cats, stressed owner, every single time</li>
+        </ul>
+      </div>
+      <div class="problem-card solution">
+        <h3>The Cat Caddy Way</h3>
+        <ul class="problem-list">
+          <li>Both carriers secured on a rolling platform</li>
+          <li>Suspension wheels glide over cracks and curbs</li>
+          <li>One hand steers, one hand is free</li>
+          <li>Hand brake holds steady while you check in</li>
+          <li>Calm arrival &mdash; for everyone</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="section-inner">
+    <div class="section-label">Engineered Details</div>
+    <h2 class="section-title">Built for real cat parents.</h2>
+    <p class="section-subtitle">Every detail designed around the moments that matter most.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">&#9783;</div>
+        <h3>Two-Tier Platform</h3>
+        <p>Carries 2&ndash;3 standard hard-shell carriers, securely strapped with padded anti-slip surfaces and raised-lip edges.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9881;</div>
+        <h3>Suspension Wheels</h3>
+        <p>10-inch white-wall wheels with coil-spring suspension. Smooth ride over sidewalk cracks, curbs, and parking lots.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9951;</div>
+        <h3>Hand Brake</h3>
+        <p>One-touch lever on the handlebar locks the rear wheels. Red/green indicator shows brake status at a glance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#9733;</div>
+        <h3>Integrated Console</h3>
+        <p>Dual recessed cup holders plus a lidded storage compartment &mdash; molded seamlessly into the frame, not bolted on.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#8635;</div>
+        <h3>One-Hand Fold</h3>
+        <p>X-frame collapses flat and stands upright on its own. Fits in an SUV trunk, closet, or behind a door.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">&#10022;</div>
+        <h3>Premium Finish</h3>
+        <p>Royal purple metallic powder coat with Cadillac-inspired chrome accents. This is not a shopping cart.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT BREAK (FOLDED VIEW) -->
+<section class="product-break">
+  <img src="renders/cat-caddy-folded-concept.jpg" alt="The Cat Caddy folded for compact storage, showing one-hand fold mechanism" width="700" height="700" loading="lazy">
+  <p>Folds flat. Stands upright. Fits anywhere.</p>
+</section>
+
+<!-- LINEUP -->
+<section class="lineup">
+  <div class="section-inner">
+    <div class="section-label">The Lineup</div>
+    <h2 class="section-title">Choose your ride.</h2>
+    <p class="section-subtitle">Starting with Classic at launch. More to come.</p>
+    <div class="lineup-grid">
+      <div class="lineup-card featured">
+        <h3>Classic</h3>
+        <div class="lineup-price">$249 <span>estimated retail</span></div>
+        <ul class="lineup-features">
+          <li>2&ndash;3 carrier capacity</li>
+          <li>10" suspension wheels</li>
+          <li>Hand brake</li>
+          <li>Dual cup holders + storage</li>
+          <li>One-hand fold</li>
+          <li>Chrome accent package</li>
+        </ul>
+      </div>
+      <div class="lineup-card">
+        <h3>Luxe</h3>
+        <div class="lineup-price">$299&ndash;349 <span>estimated retail</span></div>
+        <ul class="lineup-features">
+          <li>Everything in Classic</li>
+          <li>Magnetic carrier straps</li>
+          <li>Vegan leather handle grip</li>
+          <li>Full chrome package</li>
+          <li>Color options available</li>
+        </ul>
+      </div>
+      <div class="lineup-card">
+        <h3>Qi Charger Add-On</h3>
+        <div class="lineup-price">$39&ndash;49 <span>estimated retail</span></div>
+        <ul class="lineup-features">
+          <li>Face-down wireless charging pad</li>
+          <li>Snap-in console mount</li>
+          <li>USB-C powered</li>
+          <li>10&ndash;15W fast charge</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAITLIST -->
+<section class="waitlist" id="waitlist">
+  <div class="section-inner">
+    <div class="section-label">Be First</div>
+    <h2 class="section-title">Get exclusive launch pricing.</h2>
+    <p class="section-subtitle">Waitlist members will be the first to know when The Cat Caddy is available &mdash; and the only ones who get founder pricing.</p>
+    <form class="waitlist-form" action="https://formspree.io/f/xwpkjkpb" method="POST">
+      <input type="hidden" name="_subject" value="New Cat Caddy Waitlist Signup">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <select name="model" required>
+        <option value="" disabled selected>Which model interests you?</option>
+        <option value="Classic">Classic ($249)</option>
+        <option value="Luxe">Luxe ($299&ndash;349)</option>
+        <option value="Both">Both &mdash; I want options</option>
+      </select>
+      <button type="submit" class="btn-primary">Join the Waitlist</button>
+      <p class="waitlist-note">No payment required. We&rsquo;ll only email you about The Cat Caddy.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="section-inner">
+    <div class="section-label">FAQ</div>
+    <h2 class="section-title">Questions? We&rsquo;ve got answers.</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>When will The Cat Caddy be available?</summary>
+        <p>We&rsquo;re currently in the design and prototyping phase. Waitlist members will be the first to know when pre-orders open. Sign up above to stay in the loop.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What size carriers does it fit?</summary>
+        <p>The Cat Caddy is designed for standard hard-shell carriers (the kind most people already own for vet visits). The platform accommodates 2&ndash;3 carriers on two tiers with adjustable straps.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How much weight can it hold?</summary>
+        <p>The target weight capacity is generous enough for multiple cats plus carriers. Final specs will be confirmed after prototype testing and published before pre-orders open.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does it fold for storage?</summary>
+        <p>Yes. The X-frame design collapses with one hand and stands upright on its own when folded. It fits in an SUV trunk, a closet, or behind a door.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is this just a fancy shopping cart?</summary>
+        <p>Not even close. The Cat Caddy is purpose-built for cat carriers &mdash; with suspension wheels for smooth rolling, padded anti-slip platforms, carrier straps, an ergonomic 5-foot handle, a hand brake, and an integrated console. It&rsquo;s a mobility solution, not a utility cart.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Will there be color options?</summary>
+        <p>The launch model features our signature royal purple with chrome accents. Additional colorways (Jet Black, Coastal Cream, Forest Green, Blush Sand) are planned for the Luxe model.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">THE CAT CADDY&trade;</div>
+  <p>&copy; 2026 The Cat Caddy. All rights reserved. The Cat Caddy&trade; is a trademark. Patent pending.</p>
+</footer>
+
+</body>
+</html>
