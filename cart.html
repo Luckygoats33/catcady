@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart &mdash; The Cat Caddy&trade;</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="cart">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="announce">Pre-orders open &middot; Free US shipping &middot; 60-day returns</div>
+<nav class="nav" aria-label="Main">
+  <a class="nav-logo" href="index.html">THE CAT <span>CADDY</span>&trade;</a>
+  <ul class="nav-links">
+    <li class="hide-sm"><a href="the-cat-caddy.html">Shop</a></li>
+    <li class="hide-sm"><a href="index.html#how">How It Works</a></li>
+    <li class="hide-sm"><a href="index.html#faq">FAQ</a></li>
+    <li><a class="cart-btn" href="cart.html" aria-current="page">Cart <span class="cart-count" data-cart-count>0</span></a></li>
+  </ul>
+</nav>
+
+<main id="main" class="cart-page">
+  <h1>Your Cart</h1>
+  <div class="cart-layout">
+    <div data-cart-items></div>
+    <div class="summary" data-cart-totals></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-bottom" style="margin-top:0;border-top:none;padding-top:0">&copy; 2026 The Cat Caddy &middot; <a href="the-cat-caddy.html">Shop</a> &middot; <a href="future-plans.html">Future Plans</a></div>
+</footer>
+
+<script src="assets/store.js" defer></script>
+</body>
+</html>
